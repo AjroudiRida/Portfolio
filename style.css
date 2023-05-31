@@ -3,24 +3,22 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
-  font-family: poppins;
+  font-family: 'poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
 @media only screen and (max-width: 375px) {
-
   .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 2.4rem;
-    height: 4.8rem;      
+    height: 4.8rem;
   }
-    
+
   .nav {
     display: flex;
     justify-content: center;
@@ -29,9 +27,9 @@ body {
 
   .nav img {
     width: 1.8rem;
-    height: 1.2rem;  
+    height: 1.2rem;
   }
-    
+
   .headline {
     height: 60.4rem;
     width: 32.7rem;
@@ -44,19 +42,19 @@ body {
     margin: 0 auto;
     gap: 1.2rem 0;
   }
-    
+
   .headline h1 {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
     height: 15rem;
-    color: #172B4D;
-    width: 32.7rem;  
+    color: #172b4d;
+    width: 32.7rem;
   }
-    
+
   .headline p {
-    flex: 1 1 100%;  
+    flex: 1 1 100%;
     font-weight: 400;
     font-size: 1.6rem;
     color: #344563;
@@ -67,18 +65,17 @@ body {
   }
 
   .connect {
-    flex: 1 1 100%;  
-    text-decoration: none;  
-    color: #7F8CFF;
+    flex: 1 1 100%;
+    text-decoration: none;
+    color: #7f8cff;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
 
-
   #logo {
     text-decoration: none;
-    color: #6070FF;
+    color: #6070ff;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2rem;
@@ -87,11 +84,4 @@ body {
   .social {
     flex: 0 15%;
   }
-
-   
-      
 }
-
-    @media only screen and (min-width: 768px) {
-      
-    }
