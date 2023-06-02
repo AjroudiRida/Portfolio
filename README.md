@@ -62,9 +62,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
-> In this project, I created the header section of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
+> In this project, I created the header, works ans about me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
 
-<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header part.
+<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header, projects and about me sections.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -219,7 +219,7 @@ Rida Ajroudi
 
 > Describe 1 - 3 features you will add to the project.
 
-- Add the desktop version of the header section
+- Add the desktop version of the header, works and about me sections
 - Make the site responsif
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

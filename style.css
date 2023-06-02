@@ -2,27 +2,33 @@ html {
   font-size: 10px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: 'poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
+  background-color: #f7f7f9;
 }
 
 @media only screen and (max-width: 375px) {
+  header {
+    background-color: #fff;
+  }
+
   .toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2.4rem;
     height: 4.8rem;
+    width: 100%;
+    background-color: #fff;
   }
 
   nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1.6rem;
   }
 
   nav img {
@@ -32,7 +38,6 @@ body {
 
   .headline {
     height: 60.4rem;
-    width: 32.7rem;
     background-image: url("./assets/images/header-shapes-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,21 +46,23 @@ body {
     align-content: center;
     margin: 0 auto;
     gap: 1.2rem 0;
+    background-color: #fff;
+    padding: 0 1.6rem;
+    border-bottom-left-radius: 15%;
   }
 
   .headline h1 {
-    flex: 1 1 100%;
+    flex: 1 1 30rem;
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
     height: 15rem;
     color: #172b4d;
-    width: 32.7rem;
     margin: 0;
   }
 
   .headline p {
-    flex: 1 1 100%;
+    flex: 1 1 30rem;
     font-weight: 400;
     font-size: 1.6rem;
     color: #344563;
@@ -66,12 +73,13 @@ body {
   }
 
   .connect {
-    flex: 1 1 100%;
+    flex: 1 1 30rem;
     text-decoration: none;
     color: #7f8cff;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    margin: 0;
   }
 
   #logo {
@@ -80,6 +88,7 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2rem;
+    margin-left: 1.6rem;
   }
 
   .social {
@@ -92,5 +101,272 @@ body {
 
   .social li {
     flex: 1;
+  }
+
+  .work {
+    height: auto;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 32.7rem;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 8.8rem;
+    padding: 1.6rem 1.6rem 0 1.6rem;
+    margin-top: 11.4rem;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #172b4d;
+    margin: 1.2rem 0 0 0;
+  }
+
+  .project {
+    border: 0.1rem solid #dfe1e6;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem 0;
+    padding: 1.6rem 1.6rem 2.8rem 1.6rem;
+    border-radius: 1.6rem;
+  }
+
+  .project-header {
+    flex-basis: 29.5rem;
+  }
+
+  .project-details {
+    flex-basis: 29.5rem;
+  }
+
+  .project-details ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0 1.2rem;
+    margin: 0;
+    width: 85%;
+    justify-content: center;
+  }
+
+  .project-details ul li {
+    text-align: center;
+  }
+
+  .socialmedia ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-details ul li:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #344563;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .project-details ul li:nth-child(3) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+    flex: 3;
+  }
+
+  .project-details ul li:nth-child(5) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .project p {
+    flex-basis: 29.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    color: #344563;
+  }
+
+  .project-tech-stack {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-basis: 29.5rem;
+    display: flex;
+    gap: 0 0.8rem;
+  }
+
+  .project-header img {
+    width: 29.5rem;
+    height: 22rem;
+  }
+
+  .project-tech-stack li a {
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #6070ff;
+    background-color: #ebebff;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.8rem;
+  }
+
+  .project-tech-stack a:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: #396df2;
+    border: 0.1rem solid #396df2;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+  }
+
+  .btn:hover {
+    background-color: #6070ff;
+    color: #fff;
+    box-shadow: 5px 5px 15px 5px rgba(64, 83, 252, 0.24);
+  }
+
+  .btn:active {
+    background-color: #2230d2;
+    color: #fff;
+  }
+
+  .about-myself {
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1.7rem 0;
+    margin: 11.4rem 0 0 0;
+    padding: 0 2.4rem;
+    border-top-right-radius: 15%;
+  }
+
+  .about-myself .title {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: #172b4d;
+    flex-basis: 32.7rem;
+    margin-top: 11.4rem;
+  }
+
+  .about-myself p {
+    color: #344563;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.4rem;
+    flex-basis: 32.7rem;
+    margin: 0;
+  }
+
+  .contactme {
+    color: #7f8cff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .socialmedia {
+    flex-basis: 100%;
+  }
+
+  .socialmedia ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-myself .skills {
+    flex-basis: 100%;
+  }
+
+  .about-myself .skills ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-myself .skills ul li {
+    flex-basis: 7.2rem;
+    border-bottom: 0.1rem solid #dfe1e6;
+    color: #000;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 7.2rem;
+  }
+
+  .skills .languages div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills .languages div:nth-child(2) ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    border: none;
+    background-color: #f7f7f9;
+    border-radius: 0.8rem;
+    color: #253858;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .skills ul li:first-child img {
+    width: 1.4rem;
+    height: 0.8rem;
+    margin-right: 1.6rem;
+  }
+
+  .skills ul li:nth-child(2) img {
+    margin-right: 1.6rem;
+  }
+
+  .skills ul li:nth-child(3) img {
+    margin-right: 1.6rem;
+  }
+
+  .skills .languages div:nth-child(2) img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .skills .frameworks,
+  .skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.6rem;
   }
 }
