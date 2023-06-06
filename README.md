@@ -62,9 +62,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
-> In this project, I created the header, works ans about me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
+> In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
 
-<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header, projects and about me sections.
+<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header, projects,about me and contact me sections.
 
 ## 🛠 Built With <a name="built-with"></a>
 
