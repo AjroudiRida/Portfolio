@@ -369,4 +369,35 @@ body {
     justify-content: space-between;
     column-gap: 1.6rem;
   }
+
+.contact-me {
+background-image: url("/assets/images/contact-form-shapes-mobile.png") ;
+background-color: #6070FF;
+background-position:cover;
+background-repeat: no-repeat;
+
+
+}
+
+.contact-me h2 {
+  position: absolute;
+  width: 801px;
+  height: 56px;
+  left: -213px;
+  top: 4734px;
+
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+
 }
