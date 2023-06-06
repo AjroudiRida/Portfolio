@@ -375,29 +375,39 @@ background-image: url("/assets/images/contact-form-shapes-mobile.png") ;
 background-color: #6070FF;
 background-position:cover;
 background-repeat: no-repeat;
-
+display: flex;
+flex-wrap: wrap;
 
 }
 
 .contact-me h2 {
-  position: absolute;
-  width: 801px;
-  height: 56px;
-  left: -213px;
-  top: 4734px;
-
-  
-  font-family: 'Poppins';
-  font-style: normal;
+  flex-basis: 100%;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: #fff;
+
 
 }
 
+.contact-me p {
+  color: #EBEBFF;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  flex-basis: 100%;
+}
 
+.contact-me button {
+  flex-basis: 100%;
+  height: 4.8rem;
+}
+
+.contact-me form {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  
+}
 }
