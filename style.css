@@ -370,52 +370,77 @@ body {
     column-gap: 1.6rem;
   }
 
-.contact-me {
-background-image: url("/assets/images/contact-form-shapes-mobile.png") ;
-background-color: #6070FF;
-background-position:cover;
-background-repeat: no-repeat;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-padding: 0 2.4rem;
-}
+  .contact-me {
+    background-image: url("./assets/images/contact-form-shapes-mobile.png");
+    background-color: #6070ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10.4rem  3.84rem 0.8rem 3.84rem;
+    margin-top: 17.685rem;
+    border-top-left-radius: 6rem;
+  }
 
-.contact-me h2 {
-  flex-basis: 100%;
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 5.2rem;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
+  .contact-me h2 {
+    flex-basis: 100%;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
 
-.contact-me p {
-  color: #EBEBFF;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  flex-basis: 100%;
-}
+  .contact-me p {
+    color: #ebebff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 5.2rem;
+  }
 
-.contact-me button {
-  flex-basis: 100%;
-  height: 4.8rem;
-}
+  .contact-me button {
+    width: 14.2rem;
+    height: 4.8rem;
+    border-radius: 0.8rem;
+    color: #6070ff;
+    background-color: #fff;
+    border: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
 
-.contact-me form {
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  width: 32.7rem;
-  
-}
+  .contact-me form {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 32.7rem;
+  }
 
-#name {
-  height:  4.8rem;
-  
-  
-}
+  .contact-me form input {
+    padding: 1.5rem 3.8rem 1.5rem 1.6rem;
+    border-radius: 0.8rem;
+    border: 0;
+  }
+
+  .contact-me form textarea {
+    height: 17rem;
+    padding: 1.5rem 3.8rem 1.5rem 1.6rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 0;
+  }
+
+  hr {
+    width: 13.4rem;
+    border: 0.25rem solid #0d151e;
+    border-radius: 1rem;
+  }
 }
