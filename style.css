@@ -1,7 +1,13 @@
-html {
-  font-size: 10px;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
@@ -373,12 +379,13 @@ body {
   .contact-me {
     background-image: url("./assets/images/contact-form-shapes-mobile.png");
     background-color: #6070ff;
-    background-size: cover;
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10.4rem  2.4rem 0.8rem 2.4rem;
+    padding: 10.3rem  2.4rem 0.8rem 2.4rem;
     margin-top: 17.685rem;
     border-top-left-radius: 6rem;
   }
@@ -426,8 +433,10 @@ body {
 
   .contact-me form input {
     padding: 1.5rem 3.8rem 1.5rem 1.6rem;
+    height: 4.8rem;
     border-radius: 0.8rem;
     border: 0;
+    box-sizing: border-box;
   }
 
   .contact-me form textarea {
@@ -436,6 +445,10 @@ body {
     box-sizing: border-box;
     border-radius: 0.5rem;
     border: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
   }
 
   hr {
