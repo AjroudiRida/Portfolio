@@ -60,7 +60,7 @@ body {
     gap: 1.2rem 0;
     background-color: #fff;
     padding: 0 1.6rem;
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: 7rem;
     max-width: 37.5rem;
   }
 
@@ -133,6 +133,7 @@ body {
     line-height: 4.4rem;
     color: #172b4d;
     margin: 0;
+    margin-bottom: 1.8rem;
   }
 
   .project {
@@ -142,10 +143,6 @@ body {
     flex-wrap: wrap;
     padding: 1.6rem 1.6rem 2.8rem 1.6rem;
     border-radius: 1.6rem;
-  }
-
-  .project-title {
-    margin-bottom: 1.8rem;
   }
 
   .project-details {
@@ -241,11 +238,11 @@ body {
     text-decoration: underline;
   }
 
-  .btn {
-    flex-basis: 50%;
-    max-width: 50%;
+  .project .btn {
+    flex-basis: 40%;
+    max-width: 40%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     font-size: 1.7rem;
     line-height: 2.4rem;
     font-weight: 500;
@@ -253,6 +250,7 @@ body {
     border: 0.1rem solid #396df2;
     border-radius: 0.8rem;
     padding: 1.2rem;
+    text-decoration: none;
   }
 
   .btn:hover {
@@ -266,16 +264,30 @@ body {
     color: #fff;
   }
 
+  .about-myself .left .btn {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: #396df2;
+    border: 0.1rem solid #396df2;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    text-decoration: none;
+  }
+
   .about-myself {
     background-color: #fff;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    gap: 1.7rem 0;
     margin: 11.4rem auto 0 auto;
     padding: 0 2.4rem;
-    border-top-right-radius: 15%;
+    border-top-right-radius: 7rem;
     max-width: 37.5rem;
   }
 
@@ -286,6 +298,7 @@ body {
     color: #172b4d;
     flex-basis: 32.7rem;
     margin-top: 11.4rem;
+    margin-bottom: 1.7rem;
   }
 
   .about-myself p {
@@ -294,7 +307,7 @@ body {
     font-weight: normal;
     line-height: 2.4rem;
     flex-basis: 32.7rem;
-    margin: 0;
+    margin-bottom: 1.7rem;
   }
 
   .contactme {
@@ -303,12 +316,12 @@ body {
     font-weight: 400;
     line-height: 2.4rem;
     flex-basis: 100%;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 1.7rem;
   }
 
   .socialmedia {
     flex-basis: 100%;
+    margin-bottom: 1.7rem;
   }
 
   .socialmedia ul {
@@ -472,8 +485,6 @@ body {
 }
 
 @media screen and (min-width: 769px) {
-
- 
   .toolbar {
     height: 7.2rem;
     display: flex;
@@ -485,7 +496,9 @@ body {
   }
 
   #top-navigation {
-    display: block;
+    list-style: none;
+    display: flex;
+    column-gap: 3.2rem;
   }
 
   #top-navigation li a {
@@ -496,14 +509,18 @@ body {
     line-height: 2rem;
   }
 
-  .toolbar nav img {
-    display: none;
+  .img-container img {
+    max-width: 100%;
+    height: auto;
   }
 
-  #top-navigation {
-    list-style: none;
-    display: flex;
-    column-gap: 3.2rem;
+  .skill-list img {
+    width: 0.6rem;
+    height: 1.2rem;
+  }
+
+  .toolbar nav img {
+    display: none;
   }
 
   #logo {
@@ -513,7 +530,7 @@ body {
     font-weight: 700;
     line-height: 2rem;
   }
-  
+
   .headline {
     height: 84.6rem;
     background-image: url("./assets/images/Header-shapes-desktop.png");
@@ -532,7 +549,7 @@ body {
   }
 
   .headline h1 {
-    color: #091E42;
+    color: #091e42;
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 6rem;
@@ -557,157 +574,9 @@ body {
 
   .headline .social {
     list-style: none;
-    flex-basis: 92rem;
     display: flex;
     flex-basis: 100%;
     column-gap: 1.9rem;
-  }
-
-  .headline .social li {
-    flex-basis: 2rem;
-  }
-
-  .work {
-    display: grid;
-    grid-template: repeat(4, 20%) / 60%;
-    justify-content: center;
-    padding: 14.2rem 0;
-    gap: 14.2rem 0;
-   
-  }
-
-  .project:nth-child(2n-1) {
-    display: flex;
-    /* flex-direction: column; */
-    column-gap: 2.3rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 2.4rem;
-    padding: 2.4rem;
-    background-color: #fff;
-    border: 0.1rem solid #dfe1e6;
-  }
-
-  .project:nth-child(2n) {
-    display: flex;
-    /* flex-direction: column; */
-    column-gap: 2.3rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 2.4rem;
-    padding: 2.4rem;
-    background-color: #fff;
-    border: 0.1rem solid #dfe1e6;
-    flex-direction: row-reverse;
-  }
-  
-
-
-
-  .img-container {
-    flex-basis: 48%;
-    max-width: 50%;
-    flex-grow: 0;
-    align-self: flex-start;
-  }
-
-  .img-container img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .main-container {
-    flex-basis: 48%;
-    max-width: 50%;
-    align-self: flex-start;
-  }
-  /* .project:nth-child(2n) {
-    display: grid;
-    grid-template: 5.2rem 2rem 2.4rem 3.2rem 4.8rem 2.4rem 2.4rem 4rem 4.6rem / 1fr 1fr;
-    background-color: #fff;
-    padding: 2.4rem;
-    border-radius: 2.4rem;
-  }
-
-  .project:nth-child(2n) .project-header {
-    grid-area: 1 / 2 / 10 / span 1;
-    
-  }
-
-  .project:nth-child(2n) .project-title {
-    grid-area: 1 / 1 / span 1 / span 1;
-  }
-  .project:nth-child(2n) .project-details {
-    grid-area: 3 / 1 / span 1 / span 1;
-  }
-
-  .project:nth-child(2n) p {
-    grid-area: 5 / 1 / span 1 / span 1;
-  }
-
-  .project:nth-child(2n) .project-tech-stack {
-    grid-area: 7 / 1 / span 1 / span 1;
-    height: 2.4rem;
-  }
-
-  .project:nth-child(2n) .btn {
-    grid-area: 9 / 1 / span 1 / span 1;
-  }
- */
-  
-
-  .project-title {
-    color: #091e42;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 5.2rem;
-    margin-bottom: 2rem;
-    /* flex-basis: 50%;
-    max-width: 50%; */
-  }
-
-  .project-details ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    column-gap: 1.2rem;
-    margin-bottom: 3.2rem;
-    /* flex-basis: 50%;
-    max-width: 50%; */
-  }
-
-  .project-details ul li:first-child {
-    color: #344563;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-  }
-
-  .project-details ul li:nth-child(3), li:nth-child(5) {
-    color: #6b778c;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-  }
-
-  .project p {
-    color: #344563;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-    margin-bottom: 2.4rem;
-    /* flex-basis: 50%;
-    max-width: 50%; */
-    /* width: 100%; */
-  }
-
-  .project-tech-stack {
-    list-style: none;
-    display: flex;
-    column-gap: 0.8rem;
-    margin-bottom: 4rem;
-    /* flex-basis: 50%;
-    max-width: 50%; */
   }
 
   .project-tech-stack li {
@@ -720,6 +589,106 @@ body {
     border-radius: 0.8rem;
   }
 
+  .headline .social li {
+    flex-basis: 2rem;
+  }
+
+  .project-details ul li:nth-child(5) {
+    color: #6b778c;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  .project-details ul li:nth-child(3) {
+    color: #6b778c;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  .work {
+    display: grid;
+    grid-template: repeat(4, 20%) / 60%;
+    justify-content: center;
+    padding: 14.2rem 0;
+    gap: 14.2rem 0;
+  }
+
+  .project:nth-child(2n-1) {
+    display: flex;
+    column-gap: 2.3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    background-color: #fff;
+    border: 0.1rem solid #dfe1e6;
+  }
+
+  .project:nth-child(2n) {
+    display: flex;
+    column-gap: 2.3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    background-color: #fff;
+    border: 0.1rem solid #dfe1e6;
+    flex-direction: row-reverse;
+  }
+
+  .img-container {
+    flex-basis: 48%;
+    max-width: 50%;
+    flex-grow: 0;
+    align-self: flex-start;
+  }
+
+  .main-container {
+    flex-basis: 48%;
+    max-width: 50%;
+    align-self: flex-start;
+  }
+
+  .project-title {
+    color: #091e42;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-details ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .project-details ul li:first-child {
+    color: #344563;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  .project p {
+    color: #344563;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .project-tech-stack {
+    list-style: none;
+    display: flex;
+    column-gap: 0.8rem;
+    margin-bottom: 4rem;
+  }
+
   .project .btn {
     color: #396df2;
     font-size: 1.7rem;
@@ -729,6 +698,7 @@ body {
     border: 0.1rem solid #6070ff;
     width: 12.6rem;
     border-radius: 0.8rem;
+    text-decoration: none;
   }
 
   .about-myself {
@@ -736,18 +706,13 @@ body {
     display: grid;
     grid-template: 50% / 30% 40%;
     justify-content: center;
-    align-items: center;  
-    background-color: #fff; 
-    padding: 20.6rem 10.3rem;
     align-items: start;
+    background-color: #fff;
+    padding: 20.6rem 10.3rem;
     column-gap: 2.4rem;
     border-top-right-radius: 15rem;
   }
 
-  .about-myself .right {
-    
-  }
-  
   .about-myself .left {
     display: flex;
     flex-direction: column;
@@ -759,6 +724,16 @@ body {
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
+  }
+
+  .contact-me p {
+    width: 44.7rem;
+    min-width: 44.7rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    text-align: center;
   }
 
   .about-myself .left p {
@@ -775,39 +750,21 @@ body {
     line-height: 2.4rem;
   }
 
-  .about-myself .left .socialmedia ul {
-    display: flex;
-    list-style: none;
-  }
-
-  .about-myself .left .socialmedia ul li {
-    flex-basis: 8%;
-  }
-
-  .about-myself .left .btn {
-    color:#396df2;
-    font-size: 1.7rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-    letter-spacing: 0.03em;
-    width: 40%;
-    padding: 1.2rem;
-    border-radius: 0.8rem;
-    border: 0.1rem solid #396df2;
-    text-align: center;
-  }
-
   .about-myself .right ul {
     list-style: none;
     flex-basis: 70%;
   }
-
 
   .languages div:nth-child(2) ul {
     list-style: none;
     display: flex;
     align-items: start;
     column-gap: 1.2rem;
+  }
+
+  .about-myself .left .socialmedia ul {
+    display: flex;
+    list-style: none;
   }
 
   .languages div:nth-child(2) ul li {
@@ -822,16 +779,37 @@ body {
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
-
   }
 
-  
+  .about-myself .left .socialmedia ul li {
+    flex-basis: 8%;
+  }
+
+  .about-myself .btn {
+    text-decoration: none;
+  }
+
+  .about-myself .left .btn {
+    color: #396df2;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: 0.03em;
+    width: 40%;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #396df2;
+    text-align: center;
+  }
+
+  .languages div img {
+    width: 1.2rem;
+    height: 0.6rem;
+  }
 
   .languages div:nth-child(2) ul li img {
     width: 4.8rem;
     height: 4.8rem;
-    /* position: relative;
-    top: 1.2rem; */
     margin-bottom: 1.6rem;
   }
 
@@ -846,12 +824,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem 2.4rem 2.4rem; 
-  }
-
-  .languages div img {
-    width: 1.2rem;
-    height: 0.6rem;
+    padding: 0 4rem 2.4rem 2.4rem;
   }
 
   .skill-list {
@@ -861,11 +834,6 @@ body {
     padding: 2.4rem 4rem 2.4rem 2.4rem;
     align-items: center;
     border-bottom: 0.1rem solid #dfe1e6;
-  }
-
-   .skill-list img {
-    width: 0.6rem;
-    height: 1.2rem;
   }
 
   .contact-me {
@@ -897,16 +865,6 @@ body {
     font-weight: 700;
     line-height: 5.2rem;
     color: #fff;
-    text-align: center;
-  }
-
-  .contact-me p {
-    width: 44.7rem;
-    min-width: 44.7rem;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.8rem;
     text-align: center;
   }
 
@@ -950,5 +908,31 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.4rem;
+  }
+
+  .project .btn:hover {
+    color: #fff;
+    background-color: #6070ff;
+    box-shadow: 5px 5px 15px 5px rgba(64, 83, 252, 0.24);
+  }
+
+  .project .btn:active {
+    background-color: #2230d2;
+    color: #fff;
+  }
+
+  .about-myself .btn:hover {
+    color: #fff;
+    background-color: #6070ff;
+    box-shadow: 5px 5px 15px 5px rgba(64, 83, 252, 0.24);
+  }
+
+  .about-myself .btn:active {
+    background-color: #2230d2;
+    color: #fff;
+  }
+
+  form button:hover {
+    cursor: pointer;
   }
 }
