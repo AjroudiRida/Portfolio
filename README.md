@@ -63,8 +63,9 @@ After you're finished please remove all the comments and instructions!
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
 > In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
+> I created the desktop version using media query and Grid CSS and Flexbox.
 
-<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header, projects,about me and contact me sections.
+<strong>Portfolio: setup and mobile and desktop</strong> is a portfolio with mobile and desktop layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -219,7 +220,7 @@ Rida Ajroudi
 
 > Describe 1 - 3 features you will add to the project.
 
-- Add the desktop version of the header, works and about me sections
+- Complete the desktop version
 - Make the site responsif
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
