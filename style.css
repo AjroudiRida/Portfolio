@@ -242,8 +242,8 @@ body {
   }
 
   .btn {
-    flex-basis: 40%;
-    max-width: 40%;
+    flex-basis: 50%;
+    max-width: 50%;
     display: flex;
     align-items: center;
     font-size: 1.7rem;
