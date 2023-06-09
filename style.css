@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  height: 100vh;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
 @media screen and (max-width: 768px) {
   header {
     background-color: #fff;
-    max-width: 37.5rem;
     margin: 0 auto;
   }
 
@@ -61,11 +61,10 @@ body {
     background-color: #fff;
     padding: 0 1.6rem;
     border-bottom-left-radius: 7rem;
-    max-width: 37.5rem;
   }
 
   .headline h1 {
-    flex: 1 1 30rem;
+    flex-basis: 100%;
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
@@ -74,18 +73,17 @@ body {
   }
 
   .headline p {
-    flex: 1 1 30rem;
+    flex-basis: 100%;
     font-weight: 400;
     font-size: 1.6rem;
     color: #344563;
     line-height: 2.4rem;
     width: 32.7rem;
-    height: 14.6rem;
     margin: 0;
   }
 
   .connect {
-    flex: 1 1 30rem;
+    flex-basis: 100%;
     text-decoration: none;
     color: #7f8cff;
     font-weight: 500;
@@ -118,13 +116,12 @@ body {
   .work {
     height: auto;
     display: grid;
-    grid-template: repeat(3, 1fr) / 37.5rem;
+    grid-template: repeat(3, 1fr) / 80%;
     justify-content: center;
     justify-items: center;
     row-gap: 8.8rem;
-    padding: 11.4rem 2.4rem 0 2.4rem;
+    padding: 11.4rem 0 0 0;
     margin: 0 auto;
-    max-width: 37.5rem;
   }
 
   .project-title {
@@ -143,6 +140,7 @@ body {
     flex-wrap: wrap;
     padding: 1.6rem 1.6rem 2.8rem 1.6rem;
     border-radius: 1.6rem;
+    min-width: 100%;
   }
 
   .project-details {
@@ -239,8 +237,7 @@ body {
   }
 
   .project .btn {
-    flex-basis: 40%;
-    max-width: 40%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     font-size: 1.7rem;
@@ -265,8 +262,7 @@ body {
   }
 
   .about-myself .left .btn {
-    flex-basis: 50%;
-    max-width: 50%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     font-size: 1.7rem;
@@ -288,7 +284,6 @@ body {
     margin: 11.4rem auto 0 auto;
     padding: 0 2.4rem;
     border-top-right-radius: 7rem;
-    max-width: 37.5rem;
   }
 
   .about-myself .title {
@@ -413,7 +408,6 @@ body {
     padding: 10.3rem  2.4rem 0.8rem 2.4rem;
     margin: 17.685rem auto 0 auto;
     border-top-left-radius: 6rem;
-    max-width: 37.5rem;
   }
 
   .contact-me h2 {
@@ -485,13 +479,16 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+  header {
+    background-color: #fff;
+  }
+
   .toolbar {
     height: 7.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.6rem 15.5rem;
-    background-color: #fff;
+    width: 65%;
     margin: 0 auto;
   }
 
@@ -543,8 +540,6 @@ body {
     justify-content: center;
     align-content: center;
     row-gap: 1.2rem;
-    padding: 0 26rem;
-    margin: 0 auto;
     border-bottom-left-radius: 100px;
   }
 
@@ -553,7 +548,7 @@ body {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 6rem;
-    flex-basis: 100%;
+    flex-basis: 65%;
   }
 
   .headline p {
@@ -561,7 +556,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.8rem;
-    flex-basis: 100%;
+    flex-basis: 65%;
   }
 
   .headline .connect {
@@ -569,13 +564,13 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.4rem;
-    flex-basis: 100%;
+    flex-basis: 65%;
   }
 
   .headline .social {
     list-style: none;
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 65%;
     column-gap: 1.9rem;
   }
 
@@ -609,7 +604,7 @@ body {
 
   .work {
     display: grid;
-    grid-template: repeat(4, 20%) / 60%;
+    grid-template: repeat(4, 20%) / 64%;
     justify-content: center;
     padding: 14.2rem 0;
     gap: 14.2rem 0;
@@ -617,18 +612,17 @@ body {
 
   .project:nth-child(2n-1) {
     display: flex;
-    column-gap: 2.3rem;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 2.4rem;
     padding: 2.4rem;
     background-color: #fff;
     border: 0.1rem solid #dfe1e6;
+    align-items: start;
   }
 
   .project:nth-child(2n) {
     display: flex;
-    column-gap: 2.3rem;
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 2.4rem;
@@ -636,19 +630,19 @@ body {
     background-color: #fff;
     border: 0.1rem solid #dfe1e6;
     flex-direction: row-reverse;
+    align-items: start;
   }
 
   .img-container {
     flex-basis: 48%;
-    max-width: 50%;
-    flex-grow: 0;
     align-self: flex-start;
   }
 
   .main-container {
     flex-basis: 48%;
-    max-width: 50%;
     align-self: flex-start;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-title {
@@ -657,11 +651,14 @@ body {
     font-weight: 700;
     line-height: 5.2rem;
     margin-bottom: 2rem;
+    flex-shrink: 3;
   }
 
   .project-details ul {
+    flex-shrink: 1;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 1.2rem;
     margin-bottom: 3.2rem;
@@ -680,6 +677,7 @@ body {
     font-weight: 400;
     line-height: 2.4rem;
     margin-bottom: 2.4rem;
+    flex-shrink: 1;
   }
 
   .project-tech-stack {
@@ -687,6 +685,7 @@ body {
     display: flex;
     column-gap: 0.8rem;
     margin-bottom: 4rem;
+    flex-shrink: 1;
   }
 
   .project .btn {
@@ -699,6 +698,7 @@ body {
     width: 12.6rem;
     border-radius: 0.8rem;
     text-decoration: none;
+    flex-shrink: 1;
   }
 
   .about-myself {
@@ -708,7 +708,7 @@ body {
     justify-content: center;
     align-items: start;
     background-color: #fff;
-    padding: 20.6rem 10.3rem;
+    padding: 20.6rem 0;
     column-gap: 2.4rem;
     border-top-right-radius: 15rem;
   }
@@ -765,6 +765,7 @@ body {
   .about-myself .left .socialmedia ul {
     display: flex;
     list-style: none;
+    width: fit-content;
   }
 
   .languages div:nth-child(2) ul li {
@@ -782,7 +783,7 @@ body {
   }
 
   .about-myself .left .socialmedia ul li {
-    flex-basis: 8%;
+    margin-left: 10%;
   }
 
   .about-myself .btn {
@@ -795,7 +796,7 @@ body {
     font-weight: 500;
     line-height: 2.4rem;
     letter-spacing: 0.03em;
-    width: 40%;
+    width: fit-content;
     padding: 1.2rem;
     border-radius: 0.8rem;
     border: 0.1rem solid #396df2;
