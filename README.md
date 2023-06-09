@@ -55,7 +55,6 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -63,8 +62,9 @@ After you're finished please remove all the comments and instructions!
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
 > In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
+> I created the desktop version using a media query and Grid CSS and Flexbox.
 
-<strong>Portfolio: setup and mobile first</strong> is a section of the portfolio site that represent the header, projects,about me and contact me sections.
+<strong>Portfolio: setup and mobile and desktop</strong> is a portfolio with mobile and desktop layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -72,34 +72,13 @@ After you're finished please remove all the comments and instructions!
 
 > Html, CSS
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">Browser</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Server</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">No database used</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 
 
-- Respansif
+- Responsive website design: good presentation on all devices
 - The use of semantic tags improves SEO and web accessibility. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -123,9 +102,9 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-1 - To run this project, you need: vs code or any other code editor such as sublime text or atom.
+1 - To run this project, you need: vscode or any other code editor such as sublime text or atom.
 <br/>
-2 -must have git and npm installed in your system.
+2 -You must have git and npm installed in your system.
 
 <!--
 Example command:
@@ -137,7 +116,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder: https://github.com/AjroudiRida/Portfolio
+Clone this repository in the folder of your choice: https://github.com/AjroudiRida/Portfolio
 
 <!--
 Example commands:
@@ -150,7 +129,7 @@ Example commands:
 
 ### Install
 
-Install this project with: git clone https://github.com/AjroudiRida/Portfolio command and then use cd portfolio to access the repository.
+Install this project with: git clone https://github.com/AjroudiRida/Portfolio command and then use cd portfolio command to access the repository.
 
 <!--
 Example command:
@@ -163,7 +142,7 @@ Example command:
 
 ### Usage
 
-To run the project, just open a new tab in your browser and past the index.html url path and press enter.
+To run the project, simply open a new tab in your browser, enter the index.html path and press "Enter".
 
 <!--
 Example command:
@@ -187,7 +166,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using: any web hosting provider like neamcheap or godaddy.
+You can deploy this project using: any web hosting provider such as neamcheap or godaddy.
 
 <!--
 Example:
@@ -219,8 +198,8 @@ Rida Ajroudi
 
 > Describe 1 - 3 features you will add to the project.
 
-- Add the desktop version of the header, works and about me sections
-- Make the site responsif
+- Finish desktop version
+- Making the site responsive
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,24 +227,10 @@ If you like this project please follow me on twitter for more information and ne
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse for this opportunity and also a big thanks to my code partners
+I'd like to thank Microverse for this opportunity, as well as my coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-
-- How to install linters localy in vs code?
-
-  - Fisrt you need to have npm installed in your system, after that you need to execute this command: npm install --save-dev hint@7.x then this command: npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x.
-
-- Do I need to use git to install this project?
-
-  - yes, git is a must in order to clone this project from the remote git repository.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
