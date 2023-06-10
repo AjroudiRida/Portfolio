@@ -440,9 +440,8 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.4rem;
-    margin-bottom: 3.2rem;     
-  }  
-  
+    margin-bottom: 3.2rem;
+  }
 
   .contact-me form {
     flex-basis: 100%;
@@ -534,12 +533,11 @@ body {
 
   @keyframes rotateLogo {
     0% {
-        transform: rotate(0);
-      }
+      transform: rotate(0);
+    }
 
     100% {
-        transform: rotate(360deg);
-      }
+      transform: rotate(360deg);
     }
   }
 
@@ -739,7 +737,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     line-height: 5.2rem;
-  }  
+  }
 
   .contact-me p {
     width: 44.7rem;
@@ -750,8 +748,6 @@ body {
     line-height: 2.8rem;
     text-align: center;
   }
-
-  
 
   .about-myself .left p {
     color: #344563;
@@ -899,7 +895,7 @@ body {
     border: 0;
     align-self: center;
     transition: all 1s ease;
-  }  
+  }
 
   form input {
     flex-basis: 4.8rem;
@@ -956,6 +952,5 @@ body {
     background-color: #6070ff;
     color: #fff;
     border: 1px solid #fff;
-    
   }
 }
