@@ -526,6 +526,19 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2rem;
+    animation-name: rotateLogo;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rotateLogo {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .headline {
@@ -881,6 +894,7 @@ body {
     background-color: #fff;
     border: 0;
     align-self: center;
+    transition: all 1s ease;
   }
 
   form input {
@@ -935,5 +949,8 @@ body {
 
   form button:hover {
     cursor: pointer;
+    background-color: #6070ff;
+    color: #fff;
+    border: 1px solid #fff;
   }
 }
