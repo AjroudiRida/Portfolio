@@ -89,7 +89,7 @@ After you're finished please remove all the comments and instructions!
 
 
 
-- [Live Demo Link](https://github.com/AjroudiRida/Portfolio)
+- [Live Demo Link](https://ajroudirida.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
