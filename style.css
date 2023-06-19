@@ -23,6 +23,10 @@ body {
     margin: 0 auto;
   }
 
+  .animation {
+    background-color: red;
+  }
+
   #top-navigation {
     display: none;
   }
@@ -46,6 +50,60 @@ body {
   nav img {
     width: 1.8rem;
     height: 1.2rem;
+  }
+
+  .mobile-nav {
+    background-color: #6070ff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -10rem;
+    width: 0;
+    bottom: 0;
+    padding-left: 2.8rem;
+    padding-top: 10rem;
+    backdrop-filter: blur(1rem);
+    mix-blend-mode: multiply;
+    /* display: none; */
+    transition: all 0.5s ease;
+    visibility: hidden;
+    
+  }
+
+  .visible {
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    background-color: red;
+    visibility: visible;
+   
+  }
+
+  .hidden {
+    width: 0;
+    background-color: red;
+    visibility: hidden;
+   
+  }
+
+  #close-menu {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: relative;
+    left: 80vw;
+    top: -3rem;
+  }
+
+  .mobile-nav ul li {
+    margin-bottom: 4rem;
+  }
+
+  .mobile-nav ul li a {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    text-decoration: none;
   }
 
   .headline {
@@ -519,6 +577,12 @@ body {
   .toolbar nav img {
     display: none;
   }
+
+  .mobile-nav {
+    display: none;
+  }
+
+
 
   #logo {
     color: #6070ff;
