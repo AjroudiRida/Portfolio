@@ -61,16 +61,17 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
-> In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css tool.
-> I created the desktop version using a media query and Grid CSS and Flexbox.
+> In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css and Grid tool.
+> I created the desktop version using a media query, Grid CSS and Flexbox.
+> I've added an interactive mobile menu using javascript
 
-<strong>Portfolio: setup and mobile and desktop</strong> is a portfolio with mobile and desktop layout.
+<strong>Portfolio: setup mobile and desktop</strong> is a portfolio with mobile and desktop layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Html, CSS
+> Html, CSS, Javascript
 
 <!-- Features -->
 
@@ -154,7 +155,7 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:  npx stylelint "**/*.{css,scss}".
+To run tests, run the following command:  npx stylelint "**/*.{css,scss}" and npx eslint .
 
 <!--
 Example command:
@@ -198,8 +199,7 @@ Rida Ajroudi
 
 > Describe 1 - 3 features you will add to the project.
 
-- Finish desktop version
-- Making the site responsive
+- Project details section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
