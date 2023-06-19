@@ -93,6 +93,10 @@ body {
     top: -3rem;
   }
 
+  #close-menu:hover {
+    cursor: pointer;
+  }
+
   .social li {
     flex: 1;
   }
