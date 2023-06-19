@@ -64,26 +64,22 @@ body {
     padding-top: 10rem;
     backdrop-filter: blur(1rem);
     mix-blend-mode: multiply;
+
     /* display: none; */
     transition: all 0.5s ease;
     visibility: hidden;
-    
   }
 
   .visible {
     position: fixed;
     left: 0;
     width: 100vw;
-    background-color: red;
     visibility: visible;
-   
   }
 
   .hidden {
     width: 0;
-    background-color: red;
     visibility: hidden;
-   
   }
 
   #close-menu {
@@ -92,6 +88,20 @@ body {
     position: relative;
     left: 80vw;
     top: -3rem;
+  }
+
+  .social li {
+    flex: 1;
+  }
+
+  .project-tech-stack li a {
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #6070ff;
+    background-color: #ebebff;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.8rem;
   }
 
   .mobile-nav ul li {
@@ -165,10 +175,6 @@ body {
     padding: 0;
     height: 2rem;
     display: flex;
-  }
-
-  .social li {
-    flex: 1;
   }
 
   .work {
@@ -278,16 +284,6 @@ body {
     max-width: 100%;
     height: auto;
     margin-bottom: 1.8rem;
-  }
-
-  .project-tech-stack li a {
-    font-style: normal;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    color: #6070ff;
-    background-color: #ebebff;
-    padding: 0.4rem 1.2rem;
-    border-radius: 0.8rem;
   }
 
   .project-tech-stack a:hover {
@@ -581,8 +577,6 @@ body {
   .mobile-nav {
     display: none;
   }
-
-
 
   #logo {
     color: #6070ff;
