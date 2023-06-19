@@ -64,10 +64,13 @@ body {
     padding-top: 10rem;
     backdrop-filter: blur(1rem);
     mix-blend-mode: multiply;
-
-    /* display: none; */
     transition: all 0.5s ease;
     visibility: hidden;
+    overflow: hidden;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
   }
 
   .visible {
