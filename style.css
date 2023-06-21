@@ -327,6 +327,29 @@ body {
     color: #fff;
   }
 
+  .project-details-modale .btn {
+    flex-basis: 16rem;
+    min-width: 16rem;
+    color: #6070ff;
+    border: 0.1rem solid #6070ff;
+    padding: 1.4rem 1rem 1.4rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+    justify-content: center;
+  }
+
+  .project-details-modale .btn:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
   .about-myself .left .btn {
     width: fit-content;
     display: flex;
@@ -398,6 +421,15 @@ body {
     flex-basis: 100%;
   }
 
+  .project-highlights-modal ul {
+    flex-basis: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 85%;
+  }
+
   .about-myself .skills ul {
     list-style: none;
     display: flex;
@@ -419,6 +451,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .project-highlights-modal ul li:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #344563;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(2) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(3) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
   }
 
   .skills .languages div:nth-child(2) ul li {
@@ -576,42 +632,9 @@ body {
     justify-self: flex-end;
   }
 
-  .project-highlights-modal ul {
-    flex-basis: 100%;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-bottom: 2rem;
-    width: 85%;
-  }
-
-  .project-highlights-modal ul li:first-child {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #344563;
-    font-weight: 600;
-  }
-
-  .project-highlights-modal ul li:nth-child(2) {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #7a869a;
-    font-weight: 600;
-  }
-
   .project-highlights-modal ul li:nth-child(2)::before {
     content: url("./assets/images/Counter.png");
     margin: 0 1.2rem;
-  }
-
-  .project-highlights-modal ul li:nth-child(3) {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #7a869a;
-    font-weight: 600;
   }
 
   .project-highlights-modal ul li:nth-child(3)::before {
@@ -631,24 +654,6 @@ body {
     width: 100%;
     border: 0.1rem solid #ebecf0;
     margin-bottom: 2.5rem;
-  }
-
-  .project-details-modale .btn {
-    flex-basis: 16rem;
-    min-width: 16rem;
-    color: #6070ff;
-    border: 0.1rem solid #6070ff;
-    padding: 1.4rem 1rem 1.4rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2rem;
-    text-align: center;
-    border-radius: 0.8rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    column-gap: 1.3rem;
-    justify-content: center;
   }
 
   .project-details-modale .btn:nth-child(1)::after {
@@ -684,6 +689,7 @@ body {
   }
 
   .modal-container {
+    visibility: hidden;
     position: fixed;
     top: -100rem;
     left: 0;
@@ -707,10 +713,6 @@ body {
     height: 1.4rem;
     margin-right: 1.4rem;
     cursor: pointer;
-  }
-
-  .modal-container {
-    visibility: hidden;
   }
 
   .showModal {
@@ -1022,6 +1024,15 @@ body {
     line-height: 2.4rem;
   }
 
+  .project-highlights-modal ul {
+    flex-basis: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 85%;
+  }
+
   .about-myself .right ul {
     list-style: none;
     flex-basis: 70%;
@@ -1038,6 +1049,30 @@ body {
     display: flex;
     list-style: none;
     width: fit-content;
+  }
+
+  .project-highlights-modal ul li:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #344563;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(2) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(3) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
   }
 
   .languages div:nth-child(2) ul li {
@@ -1060,6 +1095,29 @@ body {
 
   .about-myself .btn {
     text-decoration: none;
+  }
+
+  .project-details-modale .btn {
+    flex-basis: 16rem;
+    min-width: 16rem;
+    color: #6070ff;
+    border: 0.1rem solid #6070ff;
+    padding: 1.4rem 1rem 1.4rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+    justify-content: center;
+  }
+
+  .project-details-modale .btn:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 
   .about-myself .left .btn {
@@ -1247,42 +1305,9 @@ body {
     justify-self: flex-end;
   }
 
-  .project-highlights-modal ul {
-    flex-basis: 100%;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-bottom: 2rem;
-    width: 85%;
-  }
-
-  .project-highlights-modal ul li:first-child {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #344563;
-    font-weight: 600;
-  }
-
-  .project-highlights-modal ul li:nth-child(2) {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #7a869a;
-    font-weight: 600;
-  }
-
   .project-highlights-modal ul li:nth-child(2)::before {
     content: url("./assets/images/Counter.png");
     margin: 0 1.2rem;
-  }
-
-  .project-highlights-modal ul li:nth-child(3) {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #7a869a;
-    font-weight: 600;
   }
 
   .project-highlights-modal ul li:nth-child(3)::before {
@@ -1304,24 +1329,6 @@ body {
     margin-bottom: 2.5rem;
   }
 
-  .project-details-modale .btn {
-    flex-basis: 16rem;
-    min-width: 16rem;
-    color: #6070ff;
-    border: 0.1rem solid #6070ff;
-    padding: 1.4rem 1rem 1.4rem 1rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2rem;
-    text-align: center;
-    border-radius: 0.8rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    column-gap: 1.3rem;
-    justify-content: center;
-  }
-
   .bg-blur {
     background-color: #c1c7d0;
     position: fixed;
@@ -1335,6 +1342,7 @@ body {
   }
 
   .modal-container {
+    visibility: hidden;
     position: fixed;
     top: -100rem;
     left: 0;
@@ -1398,10 +1406,6 @@ body {
     height: 1.4rem;
     margin-right: 1.4rem;
     cursor: pointer;
-  }
-
-  .modal-container {
-    visibility: hidden;
   }
 
   .showModal {
