@@ -224,10 +224,8 @@ body {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 0 1.2rem;
     margin: 0;
     width: 85%;
-    justify-content: center;
   }
 
   .project-details ul li {
@@ -247,7 +245,19 @@ body {
     line-height: 1.6rem;
     color: #344563;
     font-weight: 600;
-    flex: 1;
+  }
+
+  .project-details ul li:nth-child(2) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .project-details ul li:nth-child(2)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
   }
 
   .project-details ul li:nth-child(3) {
@@ -256,16 +266,11 @@ body {
     line-height: 1.6rem;
     color: #7a869a;
     font-weight: 600;
-    flex: 3;
   }
 
-  .project-details ul li:nth-child(5) {
-    font-size: 1.3rem;
-    font-style: normal;
-    line-height: 1.6rem;
-    color: #7a869a;
-    font-weight: 600;
-    flex: 1;
+  .project-details ul li:nth-child(3)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
   }
 
   .project p {
@@ -319,6 +324,29 @@ body {
 
   .btn:active {
     background-color: #2230d2;
+    color: #fff;
+  }
+
+  .project-details-modale .btn {
+    flex-basis: 15rem;
+    min-width: 15rem;
+    color: #6070ff;
+    border: 0.1rem solid #6070ff;
+    padding: 1.4rem 1rem 1.4rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    justify-content: center;
+  }
+
+  .project-details-modale .btn:hover {
+    background-color: #6070ff;
     color: #fff;
   }
 
@@ -393,6 +421,15 @@ body {
     flex-basis: 100%;
   }
 
+  .project-highlights-modal ul {
+    flex-basis: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 85%;
+  }
+
   .about-myself .skills ul {
     list-style: none;
     display: flex;
@@ -414,6 +451,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .project-highlights-modal ul li:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #344563;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(2) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(3) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
   }
 
   .skills .languages div:nth-child(2) ul li {
@@ -536,6 +597,130 @@ body {
     width: 13.4rem;
     border: 0.25rem solid #0d151e;
     border-radius: 1rem;
+  }
+
+  .project-details-modale {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+  }
+
+  .project-details-modale h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    color: #172b4d;
+  }
+
+  .project-details-modale .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-details-modale .description {
+    color: #344563;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .project-details-modale .project-highlights-modal {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  .project-highlights-modal ul li:nth-child(2)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
+  .project-highlights-modal ul li:nth-child(3)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
+  .project-details-modale .btnActions {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1rem;
+  }
+
+  .project-details-modale hr {
+    width: 100%;
+    border: 0.1rem solid #ebecf0;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-details-modale .btn:nth-child(1)::after {
+    content: "";
+    background-image: url("./assets/images/Icon-export.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .project-details-modale .btn:nth-child(2)::after {
+    content: "";
+    background-image: url("./assets/images/Icon-github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .bg-blur {
+    background-color: #c1c7d0;
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(0.5rem);
+    mix-blend-mode: multiply;
+    display: none;
+  }
+
+  .modal-container {
+    visibility: hidden;
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6rem 1.6rem 5rem 1.6rem;
+    z-index: 1;
+    overflow: scroll;
+    transition: all 0.5s;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+  }
+
+  .close-modal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 1.4rem;
+    cursor: pointer;
+  }
+
+  .showModal {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+  }
+
+  .hiddenModal {
+    visibility: hidden;
   }
 }
 
@@ -666,13 +851,6 @@ body {
     flex-basis: 2rem;
   }
 
-  .project-details ul li:nth-child(5) {
-    color: #6b778c;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-  }
-
   .project-details ul li:nth-child(3) {
     color: #6b778c;
     font-size: 1.8rem;
@@ -680,9 +858,26 @@ body {
     line-height: 2.4rem;
   }
 
+  .project-details ul li:nth-child(3)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
+  .project-details ul li:nth-child(2) {
+    color: #6b778c;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+  }
+
+  .project-details ul li:nth-child(2)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
   .work {
     display: grid;
-    grid-template: repeat(4, 20%) / 64%;
+    grid-template: repeat(1, 20%) / 64%;
     justify-content: center;
     padding: 14.2rem 0;
     gap: 14.2rem 0;
@@ -738,7 +933,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 1.2rem;
     margin-bottom: 3.2rem;
   }
 
@@ -828,6 +1022,15 @@ body {
     line-height: 2.4rem;
   }
 
+  .project-highlights-modal ul {
+    flex-basis: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 2rem;
+    width: 85%;
+  }
+
   .about-myself .right ul {
     list-style: none;
     flex-basis: 70%;
@@ -844,6 +1047,30 @@ body {
     display: flex;
     list-style: none;
     width: fit-content;
+  }
+
+  .project-highlights-modal ul li:first-child {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #344563;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(2) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
+  }
+
+  .project-highlights-modal ul li:nth-child(3) {
+    font-size: 1.3rem;
+    font-style: normal;
+    line-height: 1.6rem;
+    color: #7a869a;
+    font-weight: 600;
   }
 
   .languages div:nth-child(2) ul li {
@@ -866,6 +1093,29 @@ body {
 
   .about-myself .btn {
     text-decoration: none;
+  }
+
+  .project-details-modale .btn {
+    flex-basis: 16rem;
+    min-width: 16rem;
+    color: #6070ff;
+    border: 0.1rem solid #6070ff;
+    padding: 1.4rem 1rem 1.4rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+    justify-content: center;
+  }
+
+  .project-details-modale .btn:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 
   .about-myself .left .btn {
@@ -1017,5 +1267,151 @@ body {
     background-color: #6070ff;
     color: #fff;
     border: 1px solid #fff;
+  }
+
+  .project-details-modale {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    max-width: 115.6rem;
+    margin: 0 auto;
+  }
+
+  .project-details-modale .project-img {
+    width: 100%;
+  }
+
+  .project-details-modale h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    color: #172b4d;
+  }
+
+  .project-details-modale .description {
+    color: #344563;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .project-details-modale .project-highlights-modal {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  .project-highlights-modal ul li:nth-child(2)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
+  .project-highlights-modal ul li:nth-child(3)::before {
+    content: url("./assets/images/Counter.png");
+    margin: 0 1.2rem;
+  }
+
+  .project-details-modale .btnActions {
+    display: flex;
+    padding: 0 1rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .project-details-modale hr {
+    width: 100%;
+    border: 0.1rem solid #ebecf0;
+    margin-bottom: 2.5rem;
+  }
+
+  .bg-blur {
+    background-color: #c1c7d0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(0.5rem);
+    mix-blend-mode: multiply;
+    display: none;
+  }
+
+  .modal-container {
+    visibility: hidden;
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7.7rem 14.2rem 10rem 14.2rem;
+    overflow: scroll;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+
+  .main-container-modal {
+    margin-top: 5.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-container-modal .description {
+    flex-basis: 65%;
+  }
+
+  .main-container-modal .container-tech {
+    flex-basis: 35%;
+  }
+
+  .main-container-modal .project-tech-stack {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-details-modale .btn:nth-child(1)::after {
+    content: "";
+    background-image: url("./assets/images/Icon-export.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .project-details-modale .btn:nth-child(2)::after {
+    content: "";
+    background-image: url("./assets/images/Icon-github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+
+  .close-modal {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 1.4rem;
+    cursor: pointer;
+  }
+
+  .showModal {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+  }
+
+  .hiddenModal {
+    visibility: hidden;
   }
 }
