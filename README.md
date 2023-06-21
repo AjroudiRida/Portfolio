@@ -64,6 +64,7 @@ After you're finished please remove all the comments and instructions!
 > In this project, I created the header, works, about me and contact me sections of the portfolio using the "mobile first" approach with the help of the Flexbox css and Grid tool.
 > I created the desktop version using a media query, Grid CSS and Flexbox.
 > I've added an interactive mobile menu using javascript
+> I've maked the projects section dynamically generated and created a modal of project details with javascript;
 
 <strong>Portfolio: setup mobile and desktop</strong> is a portfolio with mobile and desktop layout.
 
@@ -80,7 +81,8 @@ After you're finished please remove all the comments and instructions!
 
 
 - Responsive website design: good presentation on all devices
-- The use of semantic tags improves SEO and web accessibility. 
+- The use of semantic tags improves SEO and web accessibility.
+- projects section dynamically generated with modal of details of each project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
