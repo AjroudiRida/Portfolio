@@ -126,56 +126,6 @@ for (let j = 0; j <= projectKeys.length; j += 1) {
   }
 }
 
-// for (const project in works) {
-//   if (Object.hasOwn(works, project)) {
-//     const projectSection = document.createElement('section');
-//     projectSection.setAttribute('class', 'project');
-//     const imgContainer = document.createElement('div');
-//     imgContainer.setAttribute('class', 'img-container');
-//     const projectImg = document.createElement('img');
-//     projectImg.setAttribute('src', works[project].img);
-//     projectImg.setAttribute('class', 'project-img');
-//     const mainContainer = document.createElement('div');
-//     mainContainer.setAttribute('class', 'main-container');
-//     const title = document.createElement('h3');
-//     title.setAttribute('class', 'project-title');
-//     title.textContent = works[project].title;
-//     const projectDetails = document.createElement('div');
-//     projectDetails.setAttribute('class', 'project-details');
-//     const projectDetailsList = document.createElement('ul');
-//     for (let i = 0; i < works[project].details.length; i += 1) {
-//       const list = document.createElement('li');
-//       list.textContent = works[project].details[i];
-//       projectDetailsList.appendChild(list);
-//     }
-//     projectDetails.appendChild(projectDetailsList);
-//     const bodyContent = document.createElement('p');
-//     bodyContent.textContent = works[project].body;
-//     const stackList = document.createElement('ul');
-//     stackList.setAttribute('class', 'project-tech-stack');
-//     for (let i = 0; i < works[project].stack.length; i += 1) {
-//       const list = document.createElement('li');
-//       const a = document.createElement('a');
-//       a.textContent = works[project].stack[i];
-//       list.appendChild(a);
-//       stackList.appendChild(list);
-//     }
-//     const seeProjectBtn = document.createElement('a');
-//     seeProjectBtn.setAttribute('class', 'btn');
-//     seeProjectBtn.setAttribute('href', '#');
-//     seeProjectBtn.textContent = 'See project';
-//     projectSection.appendChild(imgContainer);
-//     imgContainer.appendChild(projectImg);
-//     projectSection.appendChild(mainContainer);
-//     mainContainer.appendChild(title);
-//     mainContainer.appendChild(projectDetails);
-//     mainContainer.appendChild(bodyContent);
-//     mainContainer.appendChild(stackList);
-//     mainContainer.appendChild(seeProjectBtn);
-//     workContainer.appendChild(projectSection);
-//   }
-// }
-
 // project detail modal
 const projects = workContainer.getElementsByClassName('project');
 const modal = document.querySelector('.modal-container');

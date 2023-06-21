@@ -328,8 +328,8 @@ body {
   }
 
   .project-details-modale .btn {
-    flex-basis: 16rem;
-    min-width: 16rem;
+    flex-basis: 15rem;
+    min-width: 15rem;
     color: #6070ff;
     border: 0.1rem solid #6070ff;
     padding: 1.4rem 1rem 1.4rem 1rem;
@@ -341,7 +341,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    column-gap: 1.3rem;
+    column-gap: 0.4rem;
     justify-content: center;
   }
 
@@ -645,8 +645,6 @@ body {
   .project-details-modale .btnActions {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 1rem;
     row-gap: 1rem;
   }
 
@@ -1317,7 +1315,6 @@ body {
 
   .project-details-modale .btnActions {
     display: flex;
-    flex-wrap: wrap;
     padding: 0 1rem;
     row-gap: 1rem;
     column-gap: 1rem;
