@@ -185,3 +185,33 @@ form.addEventListener('submit', (e) => {
     msg.style.display = "inline-block";
   }
 });
+
+// preserve data in the browser
+
+let localStorage = window['localStorage'];
+
+
+let input = document.querySelector(".input");
+
+let inputs = form.getElementsByClassName('input');
+
+
+
+for (let i = 0; i < inputs.length; i += 1)
+{
+  
+  inputs[i].addEventListener('change', () => {
+    
+   
+    localStorage.setItem(inputs[i].name, inputs[i].value);
+    
+  });
+}
+
+window.addEventListener('load', () => {
+  
+  localStorage.getItem('name')? document.getElementById('name').value = localStorage.getItem('name'):'';
+  localStorage.getItem('email')? document.getElementById('email').value = localStorage.getItem('email'):'';
+  localStorage.getItem('message')? document.getElementById('message').value = localStorage.getItem('message'):'';
+});
+
