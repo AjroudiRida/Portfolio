@@ -166,6 +166,7 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 // Contact form validation
+
 const { localStorage } = window;
 const form = document.querySelector('#contact-form');
 form.addEventListener('submit', (e) => {
