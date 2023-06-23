@@ -177,6 +177,8 @@ form.addEventListener('submit', (e) => {
   if (emailAddress.toLowerCase() === emailAddress) {
     msg.style.visibility = 'hidden';
     form.submit();
+    form.reset();
+    localStorage.clear();
     document.getElementById('email').classList.remove('emial_validation');
   } else {
     msg.innerText = 'Message not sent because the email is not in lowercase!';
