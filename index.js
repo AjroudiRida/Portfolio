@@ -164,3 +164,23 @@ for (let i = 0; i < projects.length; i += 1) {
     });
   });
 }
+
+// Contact form validation
+
+const form = document.querySelector('#contact-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const { email } = form.elements;
+  const emailAddress = email.value;
+  const msg = form.querySelector('small');
+
+  if (emailAddress.toLowerCase() === emailAddress) {
+    msg.style.visibility = 'hidden';
+    form.submit();
+    document.getElementById('email').classList.remove('emial_validation');
+  } else {
+    msg.innerText = 'Message not sent because the email is not in lowercase!';
+    msg.style.visibility = 'visible';
+    document.getElementById('email').classList.add('email_validation');
+  }
+});

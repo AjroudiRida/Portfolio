@@ -562,7 +562,8 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.4rem;
-    margin-bottom: 3.2rem;
+
+    /* margin-bottom: 3.2rem; */
   }
 
   .contact-me form {
@@ -722,6 +723,26 @@ body {
   .hiddenModal {
     visibility: hidden;
   }
+
+  /* .submitBtn {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  } */
+
+  small {
+    color: #961b1b;
+    font-size: 1.5rem;
+    font-weight: 400;
+    visibility: hidden;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .email_validation {
+    border: 2px solid rgb(215, 37, 37) !important;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -736,6 +757,22 @@ body {
     justify-content: space-between;
     width: 65%;
     margin: 0 auto;
+  }
+
+  /* .submitBtn {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  } */
+
+  small {
+    color: #bd2929;
+    font-size: 1.5rem;
+    font-weight: 400;
+    visibility: hidden;
+    display: block;
+    margin-top: 1rem;
   }
 
   #top-navigation {
@@ -1165,6 +1202,35 @@ body {
     border-bottom: 0.1rem solid #dfe1e6;
   }
 
+  form button {
+    flex-basis: 4.8rem;
+    color: #6070ff;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    width: 14.2rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.8rem;
+    background-color: #fff;
+    border: 0;
+    align-self: center;
+    transition: all 1s ease;
+  }
+
+  .contact-me button {
+    width: 14.2rem;
+    height: 4.8rem;
+    border-radius: 0.8rem;
+    color: #6070ff;
+    background-color: #fff;
+    border: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+
+    /* margin-bottom: 3.2rem; */
+  }
+
   .contact-me {
     display: flex;
     flex-direction: column;
@@ -1195,21 +1261,6 @@ body {
     line-height: 5.2rem;
     color: #fff;
     text-align: center;
-  }
-
-  form button {
-    flex-basis: 4.8rem;
-    color: #6070ff;
-    font-size: 1.7rem;
-    font-weight: 500;
-    line-height: 2.4rem;
-    width: 14.2rem;
-    padding: 1.2rem 1.6rem;
-    border-radius: 0.8rem;
-    background-color: #fff;
-    border: 0;
-    align-self: center;
-    transition: all 1s ease;
   }
 
   form input {
@@ -1413,5 +1464,9 @@ body {
 
   .hiddenModal {
     visibility: hidden;
+  }
+
+  .email_validation {
+    border: 2px solid rgb(215, 37, 37) !important;
   }
 }
