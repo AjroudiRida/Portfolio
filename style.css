@@ -52,6 +52,10 @@ body {
     height: 1.2rem;
   }
 
+  #email_validation {
+    border: 2px solid rgb(215, 37, 37) ;
+  }
+
   .mobile-nav {
     background-color: #6070ff;
     height: 100vh;
@@ -746,6 +750,14 @@ body {
     margin: 0 auto;
   }
 
+  small {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    display: none;
+  }
+
   #top-navigation {
     list-style: none;
     display: flex;
@@ -1225,6 +1237,10 @@ body {
     border-radius: 0.2rem;
     border: 0;
     padding: 1.5rem 3.8rem 1.5rem 1.6rem;
+  }
+
+  #email_validation {
+    border: 2px solid rgb(215, 37, 37) ;
   }
 
   form input::placeholder {
