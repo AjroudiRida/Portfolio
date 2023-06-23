@@ -17,9 +17,7 @@ body {
   background-color: #f7f7f9;
 }
 
-.email_validation {
-  border: 2px solid rgb(215, 37, 37);
-}
+
 
 @media screen and (max-width: 768px) {
   header {
@@ -567,7 +565,7 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.4rem;
-    margin-bottom: 3.2rem;
+    /* margin-bottom: 3.2rem; */
   }
 
   .contact-me form {
@@ -728,13 +726,21 @@ body {
     visibility: hidden;
   }
 
+  .submitBtn {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
   small {
     color: #961b1b;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-left: 1rem;
     display: none;
-    margin-top: 3%;
+  }
+
+  .email_validation {
+    border: 2px solid rgb(215, 37, 37) !important;
   }
 }
 
@@ -752,13 +758,17 @@ body {
     margin: 0 auto;
   }
 
+  .submitBtn {
+    display: flex;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
   small {
     color: #bd2929;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-left: 1rem;
     display: none;
-    margin-top: 3%;
   }
 
   #top-navigation {
@@ -1436,5 +1446,9 @@ body {
 
   .hiddenModal {
     visibility: hidden;
+  }
+
+  .email_validation {
+    border: 2px solid rgb(215, 37, 37) !important;
   }
 }
