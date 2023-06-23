@@ -167,6 +167,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
 // Contact form validation
 
+const { localStorage } = window;
 const form = document.querySelector('#contact-form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -177,10 +178,36 @@ form.addEventListener('submit', (e) => {
   if (emailAddress.toLowerCase() === emailAddress) {
     msg.style.visibility = 'hidden';
     form.submit();
+    form.reset();
+    localStorage.clear();
     document.getElementById('email').classList.remove('emial_validation');
   } else {
     msg.innerText = 'Message not sent because the email is not in lowercase!';
     msg.style.visibility = 'visible';
     document.getElementById('email').classList.add('email_validation');
+  }
+});
+
+// preserve data in the browser
+
+const inputs = form.getElementsByClassName('input');
+
+for (let i = 0; i < inputs.length; i += 1) {
+  inputs[i].addEventListener('change', () => {
+    localStorage.setItem(inputs[i].name, inputs[i].value);
+  });
+}
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('name')) {
+    document.getElementById('name').value = localStorage.getItem('name');
+  }
+
+  if (localStorage.getItem('email')) {
+    document.getElementById('email').value = localStorage.getItem('email');
+  }
+
+  if (localStorage.getItem('message')) {
+    document.getElementById('message').value = localStorage.getItem('message');
   }
 });
