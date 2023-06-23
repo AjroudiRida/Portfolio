@@ -167,51 +167,46 @@ for (let i = 0; i < projects.length; i += 1) {
 
 // Contact form validation
 
-
-let form = document.querySelector("#contact-form");
+const form = document.querySelector('#contact-form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = form.elements['email'];
-  let emailAddress = email.value;
-  let msg = form.querySelector("small");
+  const { email } = form.elements;
+  const emailAddress = email.value;
+  const msg = form.querySelector('small');
 
-  if(emailAddress.toLowerCase() === emailAddress)
-  {
-    msg.style.display = "none";
+  if (emailAddress.toLowerCase() === emailAddress) {
+    msg.style.visibility = 'hidden';
     form.submit();
-  }
-  else {
-    msg.innerText = "Message not sent because the email is not in lowercase!";
-    msg.style.display = "inline-block";
+    document.getElementById('email').classList.remove('emial_validation');
+  } else {
+    msg.innerText = 'Message not sent because the email is not in lowercase!';
+    msg.style.visibility = 'visible';
+    document.getElementById('email').classList.add('email_validation');
   }
 });
 
 // preserve data in the browser
 
-let localStorage = window['localStorage'];
+const { localStorage } = window;
 
+const inputs = form.getElementsByClassName('input');
 
-let input = document.querySelector(".input");
-
-let inputs = form.getElementsByClassName('input');
-
-
-
-for (let i = 0; i < inputs.length; i += 1)
-{
-  
+for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener('change', () => {
-    
-   
     localStorage.setItem(inputs[i].name, inputs[i].value);
-    
   });
 }
 
 window.addEventListener('load', () => {
-  
-  localStorage.getItem('name')? document.getElementById('name').value = localStorage.getItem('name'):'';
-  localStorage.getItem('email')? document.getElementById('email').value = localStorage.getItem('email'):'';
-  localStorage.getItem('message')? document.getElementById('message').value = localStorage.getItem('message'):'';
-});
+  if (localStorage.getItem('name')) {
+    document.getElementById('name').value = localStorage.getItem('name');
+  }
 
+  if (localStorage.getItem('email')) {
+    document.getElementById('email').value = localStorage.getItem('email');
+  }
+
+  if (localStorage.getItem('message')) {
+    document.getElementById('message').value = localStorage.getItem('message');
+  }
+});
