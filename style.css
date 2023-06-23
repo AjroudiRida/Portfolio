@@ -52,7 +52,7 @@ body {
     height: 1.2rem;
   }
 
-  #email_validation {
+  .email_validation {
     border: 2px solid rgb(215, 37, 37) ;
   }
 
@@ -1239,7 +1239,7 @@ body {
     padding: 1.5rem 3.8rem 1.5rem 1.6rem;
   }
 
-  #email_validation {
+  .email_validation {
     border: 2px solid rgb(215, 37, 37) ;
   }
 

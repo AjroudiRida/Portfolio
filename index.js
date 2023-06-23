@@ -179,11 +179,11 @@ form.addEventListener('submit', (e) => {
   {
     msg.style.display = "none";
     form.submit();
-    document.getElementById('#email').classList.remove('#emial_validation');
+    document.getElementById('email').classList.remove('emial_validation');
   }
   else {
     msg.innerText = "Message not sent because the email is not in lowercase!";
     msg.style.display = "inline-block";
-    document.getElementById('#email').classList.add('#email_validation');
+    document.getElementById('email').classList.add('email_validation');
   }
 });
