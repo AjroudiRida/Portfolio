@@ -187,7 +187,7 @@ body {
   .work {
     height: auto;
     display: grid;
-    grid-template: repeat(3, 1fr) / 80%;
+    grid-template: repeat(1, 1fr) / 80%;
     justify-content: center;
     justify-items: center;
     row-gap: 8.8rem;
@@ -791,7 +791,9 @@ body {
 
   .img-container img {
     max-width: 100%;
+    width: 100%;
     height: auto;
+    border-radius: 0.8rem;
   }
 
   .skill-list img {
@@ -913,11 +915,16 @@ body {
   }
 
   .work {
-    display: grid;
-    grid-template: repeat(1, 20%) / 64%;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 14.2rem 0;
-    gap: 14.2rem 0;
+    row-gap: 14.2rem;
+  }
+
+  .project {
+    min-width: 70%;
+    width: 70%;
   }
 
   .project:nth-child(2n-1) {
@@ -1332,6 +1339,7 @@ body {
 
   .project-details-modale .project-img {
     width: 100%;
+    border-radius: 0.8rem;
   }
 
   .project-details-modale h3 {

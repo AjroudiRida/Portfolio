@@ -28,47 +28,29 @@ for (let i = 0; i < menuOptions.length; i += 1) {
 const works = {
   project1: {
     img: './assets/images/project-1.png',
-    title: 'Tonic',
+    title: 'EcomDev',
     details: [
-      'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', 'Front End Dev', '2023',
     ],
-    body: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    body: 'A comprehensive online platform that offers a diverse range of courses focused on mastering e-commerce development.',
     stack: [
       'HTML', 'CSS', 'Javascript',
     ],
+    live: 'https://ajroudirida.github.io/capstone-project-freelance/',
+    code: 'https://github.com/AjroudiRida/capstone-project-freelance',
   },
   project2: {
     img: './assets/images/project-2.png',
-    title: 'Multi-Post Stories',
+    title: 'To DO List',
     details: [
-      'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', 'Front End Dev', '2023',
     ],
-    body: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    body: "A project that's allow to manage and store tasks using the power of javascript and webpack.",
     stack: [
       'HTML', 'CSS', 'Javascript',
     ],
-  },
-  project3: {
-    img: './assets/images/project-3.png',
-    title: 'Tonic',
-    details: [
-      'CANOPY', 'Back End Dev', '2015',
-    ],
-    body: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    stack: [
-      'HTML', 'CSS', 'Javascript',
-    ],
-  },
-  project4: {
-    img: './assets/images/project-4.png',
-    title: 'Multi-Post Stories',
-    details: [
-      'CANOPY', 'Back End Dev', '2015',
-    ],
-    body: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    stack: [
-      'HTML', 'CSS', 'Javascript',
-    ],
+    live: 'https://ajroudirida.github.io/To-Do-list/dist/',
+    code: 'https://github.com/AjroudiRida/To-Do-list-JS-best-practices',
   },
 };
 
@@ -156,6 +138,13 @@ for (let i = 0; i < projects.length; i += 1) {
 
       modalProjectStack.appendChild(li);
     }
+
+    Object.values(works).forEach((value) => {
+      if (value.title === projects[i].getElementsByTagName('h3')[0].textContent) {
+        modal.getElementsByClassName('live')[0].setAttribute('href', value.live);
+        modal.getElementsByClassName('code')[0].setAttribute('href', value.code);
+      }
+    });
 
     modal.getElementsByClassName('close-modal')[0].addEventListener('click', () => {
       modal.classList.remove('showModal');
